@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain Names | Understanding DNS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <a class="site-name" href="index.html">Understanding DNS</a>
+            <nav aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a class="active" href="domain-names.html">Domain Names</a>
+                <a href="how-dns-works.html">How DNS Works</a>
+                <a href="key-concepts.html">Key Concepts</a>
+                <a href="references.html">References</a>
+                <a href="about.html">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-content">
+        <p class="eyebrow">Topic 1</p>
+        <h1>Domain Names</h1>
+        <p class="intro">A domain name is a human-readable name used to identify a resource on the internet. It is easier to remember a name than a long numerical address.</p>
+
+        <section class="section">
+            <h2>Parts of a domain name</h2>
+            <p>Consider <code>www.example.com</code>. The parts have different roles:</p>
+            <div class="card-grid">
+                <article class="card">
+                    <h3>www</h3>
+                    <p>This is a hostname or subdomain often used for a website. A website may use a different hostname or none at all.</p>
+                </article>
+                <article class="card">
+                    <h3>example</h3>
+                    <p>This is the second-level domain name in this example. It is the main name registered under the ending.</p>
+                </article>
+                <article class="card">
+                    <h3>.com</h3>
+                    <p>This is the top-level domain (TLD), which appears at the end of the domain name.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Common top-level domains</h2>
+            <table>
+                <thead><tr><th>Ending</th><th>Common use or meaning</th></tr></thead>
+                <tbody>
+                    <tr><td>.com</td><td>Commonly used by businesses and other organizations</td></tr>
+                    <tr><td>.edu</td><td>Used by eligible educational institutions</td></tr>
+                    <tr><td>.gov</td><td>Used by eligible government organizations in the United States</td></tr>
+                    <tr><td>.org</td><td>Often used by organizations, including nonprofits</td></tr>
+                    <tr><td>.net</td><td>Originally associated with network-related uses; now used more broadly</td></tr>
+                    <tr><td>.us, .ca, .jp</td><td>Examples of country-code top-level domains</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="callout">
+            <h2>Remember</h2>
+            <p>A domain name is not the same thing as an IP address. DNS helps find the IP address associated with a domain name.</p>
+        </section>
+        <p class="page-links"><a href="index.html">← Home</a><a href="how-dns-works.html">Next: How DNS Works →</a></p>
+    </main>
+
+    <footer class="site-footer"><div class="container"><p>Class project for IT 3203. <a href="https://ksuweb.github.io/IT3203/">Visit the IT 3203 class website</a>.</p></div></footer>
+</body>
+</html>
