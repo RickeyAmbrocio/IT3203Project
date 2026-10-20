@@ -1,12 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>IT 3203 DNS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding DNS | Home</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   <h1>Home</h1>
-   <p>IT 3203 DNS Project.</p>
+    <!-- Shared navigation keeps the site easy to use from every page. -->
+    <header class="site-header">
+        <div class="container header-content">
+            <a class="site-name" href="index.html">Understanding DNS</a>
+            <nav aria-label="Main navigation">
+                <a class="active" href="index.html">Home</a>
+                <a href="domain-names.html">Domain Names</a>
+                <a href="how-dns-works.html">How DNS Works</a>
+                <a href="key-concepts.html">Key Concepts</a>
+                <a href="references.html">References</a>
+                <a href="about.html">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <p class="eyebrow">IT 3203 Web Development Project</p>
+            <h1>Understanding Domain Names and DNS</h1>
+            <p class="intro">Learn how domain names help people find websites and how the Domain Name System connects those names to IP addresses.</p>
+            <a class="button" href="how-dns-works.html">Explore how DNS works</a>
+        </section>
+
+        <section class="section">
+            <h2>What is this website about?</h2>
+            <p>People usually type a name such as <strong>google.com</strong> into a browser instead of entering a numerical IP address. DNS helps the computer find the address connected to that name.</p>
+            <p>This website introduces domain names, explains the basic DNS lookup process, and reviews important terms used when learning about DNS.</p>
+        </section>
+
+        <section class="section">
+            <h2>Explore the topics</h2>
+            <div class="card-grid">
+                <article class="card">
+                    <h3>Domain Names</h3>
+                    <p>Learn what domain names are and how their different parts are organized.</p>
+                    <a href="domain-names.html">Read about domain names →</a>
+                </article>
+                <article class="card">
+                    <h3>How DNS Works</h3>
+                    <p>Follow the basic steps a computer uses to look up a domain name.</p>
+                    <a href="how-dns-works.html">Follow a DNS lookup →</a>
+                </article>
+                <article class="card">
+                    <h3>Key Concepts</h3>
+                    <p>Review important DNS terms in simple language.</p>
+                    <a href="key-concepts.html">Review key concepts →</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="callout">
+            <h2>Quick takeaway</h2>
+            <p>Domain names are easier for people to remember, while IP addresses help devices locate network resources. DNS connects the two.</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Class project for IT 3203. <a href="https://ksuweb.github.io/IT3203/">Visit the IT 3203 class website</a>.</p>
+        </div>
+    </footer>
 </body>
 </html>
