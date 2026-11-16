@@ -3,18 +3,61 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>How DNS Works</title>
+    <title>How DNS Works | Understanding DNS</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<header>
-		<h1>How DNS Works</h1>
-        <p>So how does DNS really work? Think of DNS as a phone book/contacts app. 
-When you want to call someone, you look up their name in the phone book/contacts app to find their phone number. Similarly, when you want to visit a website, your computer looks up the domain name in DNS to find the corresponding IP address.
-        </p>
-	</header>
+ <header class="site-header">
+        <div class="container header-content">
+            <a class="site-name" href="index.html">Understanding DNS</a>
+            <nav aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="domain-names.html">Domain Names</a>
+                <a class="active" href="how-dns-works.html">How DNS Works</a>
+                <a href="key-concepts.html">Key Concepts</a>
+                <a href="references.html">References</a>
+                <a href="about.html">About</a>
+            </nav>
+        </div>
+    </header>
 
 	<main>
-		<!-- Add page content here. -->
+   <main class="container page-content">
+        <p class="eyebrow">Topic 2</p>
+        <h1>How DNS Works</h1>
+        <p class="intro">When someone enters a domain name into a browser, DNS helps the computer find the IP address needed to contact the website's server.</p>
+
+        <section class="section">
+            <h2>A basic DNS lookup</h2>
+            <ol class="steps">
+                <li><strong>You enter a domain name.</strong> For example, you type <code>www.kennesaw.edu</code> into your browser.</li>
+                <li><strong>Your device looks for the address.</strong> It checks available DNS information and sends a request to a DNS resolver if needed.</li>
+                <li><strong>The resolver finds the answer.</strong> If the answer is not cached, the resolver may query other DNS servers to locate the correct record.</li>
+                <li><strong>The address is returned.</strong> The resolver sends the IP address back to your device.</li>
+                <li><strong>Your browser connects to the website.</strong> The browser uses the IP address to communicate with the web server.</li>
+            </ol>
+        </section>
+
+        <section class="section">
+            <h2>Two important DNS server roles</h2>
+            <div class="card-grid">
+                <article class="card">
+                    <h3>Recursive resolver</h3>
+                    <p>The resolver receives the DNS request from your device. If it does not already know the answer, it searches by asking other DNS servers.</p>
+                </article>
+                <article class="card">
+                    <h3>Authoritative DNS server</h3>
+                    <p>This server provides official DNS records for a domain or DNS zone. A resolver can ask it for the information needed to answer a query.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="callout">
+            <h2>Why it matters</h2>
+            <p>Without DNS, people would have a much harder time using the internet because they would need to remember IP addresses instead of familiar domain names.</p>
+        </section>
+        <p class="page-links"><a href="domain-names.html">← Domain Names</a><a href="key-concepts.html">Next: Key Concepts →</a></p>
+    </main>.
 	</main>
 </body>
 </html>
