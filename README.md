@@ -1,2 +1,2 @@
 # IT3203Project
-# DNS project. Enooy!
+# DNS project. Enjoy!
