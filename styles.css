@@ -98,3 +98,44 @@ h1, h2, h3 {
     line-height: 1.25;
     color: #142b4a;
 }
+
+h1 {
+    margin: 0 0 18px;
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 1.55rem;
+}
+
+h3 {
+    margin-top: 0;
+    font-size: 1.15rem;
+}
+
+.intro {
+    max-width: 780px;
+    font-size: 1.15rem;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 11px 17px;
+    border: 1px solid #245f80;
+    border-radius: 6px;
+    background-color: #245f80;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.button:hover,
+.button:focus {
+    background-color: #173e56;
+}
+
+.section {
+    margin: 32px 0;
+}
