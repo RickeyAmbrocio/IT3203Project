@@ -139,3 +139,46 @@ h3 {
 .section {
     margin: 32px 0;
 }
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    margin-top: 18px;
+}
+
+.card {
+    padding: 22px;
+    border: 1px solid #d8e0e9;
+    border-radius: 9px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 10px rgba(20, 43, 74, 0.05);
+}
+
+.card a,
+.resource-list a,
+.callout a,
+.page-links a {
+    color: #17658c;
+    font-weight: 700;
+}
+
+.card a:hover,
+.resource-list a:hover,
+.callout a:hover,
+.page-links a:hover {
+    color: #103d59;
+    text-decoration-thickness: 2px;
+}
+
+.callout {
+    margin: 32px 0;
+    padding: 22px 26px;
+    border-left: 5px solid #2f80a8;
+    border-radius: 6px;
+    background-color: #e8f3f8;
+}
+
+.callout h2 {
+    margin-bottom: 8px;
+}
