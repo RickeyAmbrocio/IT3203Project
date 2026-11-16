@@ -40,3 +40,61 @@ body {
     text-decoration: none;
     white-space: nowrap;
 }
+
+.image-container {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+/* Class selector: styles the navigation links. */
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-size: 0.92rem;
+}
+
+/* Pseudo-class selector: gives links a hover effect. */
+nav a:hover,
+nav a:focus,
+nav a.active {
+    background-color: #2f80a8;
+    color: #ffffff;
+}
+
+.hero {
+    margin: 28px 0;
+    padding: 52px 42px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #e5f2fa, #ffffff);
+    border: 1px solid #d3e2ed;
+}
+
+.eyebrow {
+    margin: 0 0 8px;
+    color: #2f7195;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+h1, h2, h3 {
+    line-height: 1.25;
+    color: #142b4a;
+}
