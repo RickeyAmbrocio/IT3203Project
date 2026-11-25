@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNS Quiz | Understanding DNS</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Main navigation -->
+    <header class="site-header">
+        <div class="container header-content">
+            <a class="site-name" href="index.html">Understanding DNS</a>
+
+            <nav aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="domain-names.html">Domain Names</a>
+                <a href="how-dns-works.html">How DNS Works</a>
+                <a href="key-concepts.html">Key Concepts</a>
+                <a href="references.html">References</a>
+                <a href="about.html">About</a>
+                <a href="quiz.html" class="active">Quiz</a>
+
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-content">
+
+        <section class="hero">
+            <p class="eyebrow">Test your knowledge</p>
+            <h1>DNS Self-Assessment Quiz</h1>
+            <p class="intro">
+                Test your understanding of domain names, DNS servers,
+                DNS records, and how DNS works.
+            </p>
+        </section>
+
+        <!-- Quiz instructions and timer -->
+        <section class="quiz-info">
+            <div>
+                <h2>Quiz Instructions</h2>
+                <p>Answer all 10 questions. You have 10 minutes to complete the quiz.</p>
+                <p>Each question is worth 1 point. A score of 7 or higher is passing.</p>
+            </div>
+
+            <div class="quiz-timer">
+                <span>Time Remaining</span>
+                <strong id="timer">10:00</strong>
+            </div>
+        </section>
+
+        <div class="quiz-actions">
+            <button type="button" id="start-button" class="button">
+                Start Quiz
+            </button>
+            <span id="quiz-status">Select Start Quiz when you are ready.</span>
+        </div>
+
+        <!-- Quiz form -->
+        <form id="dns-quiz">
+
+            <!-- Question 1: Fill in the blank -->
+            <section class="quiz-question">
+                <h2>Question 1</h2>
+                <p>What does DNS stand for?</p>
+
+                <label for="q1">Your answer:</label>
+                <input type="text" id="q1" name="q1"
+                       placeholder="Enter your answer" disabled>
+            </section>
+
+            <!-- Question 2: Fill in the blank -->
+            <section class="quiz-question">
+                <h2>Question 2</h2>
+                <p>What is the final part of a domain name, such as .com or .edu, called?</p>
+
+                <label for="q2">Your answer:</label>
+                <input type="text" id="q2" name="q2"
+                       placeholder="Enter your answer" disabled>
+            </section>
+
+            <!-- Question 3: Multiple choice -->
+            <section class="quiz-question">
+                <h2>Question 3</h2>
+                <p>What is the primary purpose of a domain name?</p>
+
+                <label><input type="radio" name="q3" value="A" disabled>
+                    To identify a device using numerical values
+                </label>
+                <label><input type="radio" name="q3" value="B" disabled>
+                    To provide a human-readable name for an Internet resource
+                </label>
+                <label><input type="radio" name="q3" value="C" disabled>
+                    To store website files
+                </label>
+                <label><input type="radio" name="q3" value="D" disabled>
+                    To encrypt Internet traffic
+                </label>
+            </section>
+
+            <!-- Question 4: Multiple choice -->
+            <section class="quiz-question">
+                <h2>Question 4</h2>
+                <p>What does a DNS recursive resolver do?</p>
+
+                <label><input type="radio" name="q4" value="A" disabled>
+                    Creates domain names
+                </label>
+                <label><input type="radio" name="q4" value="B" disabled>
+                    Receives DNS requests and searches for the requested information
+                </label>
+                <label><input type="radio" name="q4" value="C" disabled>
+                    Stores website images
+                </label>
+                <label><input type="radio" name="q4" value="D" disabled>
+                    Assigns email passwords
+                </label>
+            </section>
+
+            <!-- Question 5: Multiple choice -->
+            <section class="quiz-question">
+                <h2>Question 5</h2>
+                <p>What does an authoritative DNS server store?</p>
+
+                <label><input type="radio" name="q5" value="A" disabled>
+                    User passwords
+                </label>
+                <label><input type="radio" name="q5" value="B" disabled>
+                    Website images
+                </label>
+                <label><input type="radio" name="q5" value="C" disabled>
+                    Official DNS information and records for a domain
+                </label>
+                <label><input type="radio" name="q5" value="D" disabled>
+                    Browser history
+                </label>
+            </section>
+
+            <!-- Question 6: Multiple selection -->
+            <section class="quiz-question">
+                <h2>Question 6</h2>
+                <p>Which of the following are types of DNS records? Select all that apply.</p>
+
+                <label><input type="checkbox" name="q6" value="A" disabled> A</label>
+                <label><input type="checkbox" name="q6" value="AAAA" disabled> AAAA</label>
+                <label><input type="checkbox" name="q6" value="CNAME" disabled> CNAME</label>
+                <label><input type="checkbox" name="q6" value="MX" disabled> MX</label>
+                <label><input type="checkbox" name="q6" value="HTML" disabled> HTML</label>
+            </section>
+
+            <!-- Question 7: Multiple choice -->
+            <section class="quiz-question">
+                <h2>Question 7</h2>
+                <p>What is the purpose of an MX record?</p>
+
+                <label><input type="radio" name="q7" value="A" disabled>
+                    Maps a domain to an IPv4 address
+                </label>
+                <label><input type="radio" name="q7" value="B" disabled>
+                    Identifies the mail servers responsible for receiving email
+                </label>
+                <label><input type="radio" name="q7" value="C" disabled>
+                    Stores website images
+                </label>
+                <label><input type="radio" name="q7" value="D" disabled>
+                    Determines how long DNS information is cached
+                </label>
+            </section>
+
+            <!-- Question 8: True or false -->
+            <section class="quiz-question">
+                <h2>Question 8</h2>
+                <p>DNS caching temporarily stores DNS information to help reduce repeated lookups.</p>
+
+                <label><input type="radio" name="q8" value="True" disabled> True</label>
+                <label><input type="radio" name="q8" value="False" disabled> False</label>
+            </section>
+
+            <!-- Question 9: Multiple choice -->
+            <section class="quiz-question">
+                <h2>Question 9</h2>
+                <p>What does TTL stand for in DNS?</p>
+
+                <label><input type="radio" name="q9" value="A" disabled>
+                    Transfer Time Limit
+                </label>
+                <label><input type="radio" name="q9" value="B" disabled>
+                    Time to Live
+                </label>
+                <label><input type="radio" name="q9" value="C" disabled>
+                    Technical Transfer Link
+                </label>
+                <label><input type="radio" name="q9" value="D" disabled>
+                    Top-Level Lookup
+                </label>
+            </section>
+
+            <!-- Question 10: True or false -->
+            <section class="quiz-question">
+                <h2>Question 10</h2>
+                <p>DNS helps computers locate resources by translating domain names into IP addresses.</p>
+
+                <label><input type="radio" name="q10" value="True" disabled> True</label>
+                <label><input type="radio" name="q10" value="False" disabled> False</label>
+            </section>
+
+            <div class="quiz-actions">
+                <button type="submit" id="submit-button" class="button" disabled>
+                    Submit Quiz
+                </button>
+
+                <button type="button" id="reset-button" class="button secondary-button">
+                    Retake Quiz
+                </button>
+            </div>
+
+        </form>
+
+        <!-- Quiz results appear here after submission -->
+        <section id="quiz-results" class="quiz-results" aria-live="polite" hidden>
+            <h2>Quiz Results</h2>
+            <div id="score-summary"></div>
+            <div id="answer-review"></div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>
+                Class project for IT 3203.
+                <a href="https://ksuweb.github.io/IT3203/">
+                    Visit the IT 3203 class website
+                </a>.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
