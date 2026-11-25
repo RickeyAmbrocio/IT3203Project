@@ -299,3 +299,160 @@ th {
         padding: 9px;
     }
 }
+
+/* CSS for the quiz page */
+
+.quiz-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 25px 0;
+    background-color: #f1f5f9;
+    border: 1px solid #d1dce8;
+    border-radius: 10px;
+}
+
+.quiz-timer {
+    min-width: 130px;
+    text-align: center;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 2px solid #2563eb;
+    border-radius: 10px;
+}
+
+.quiz-timer span {
+    display: block;
+    font-size: 14px;
+}
+
+.quiz-timer strong {
+    display: block;
+    font-size: 28px;
+    color: #1d4ed8;
+}
+
+/* Quiz buttons and status */
+.quiz-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.quiz-actions button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.secondary-button {
+    background-color: #64748b;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Individual questions */
+.quiz-question {
+    padding: 22px;
+    margin: 20px 0;
+    background-color: #ffffff;
+    border: 1px solid #d1dce8;
+    border-radius: 10px;
+}
+
+.quiz-question h2 {
+    color: #1d4ed8;
+    font-size: 20px;
+}
+
+.quiz-question p {
+    font-weight: bold;
+}
+
+.quiz-question label {
+    display: block;
+    margin: 12px 0;
+    cursor: pointer;
+}
+
+.quiz-question input[type="radio"],
+.quiz-question input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.quiz-question input[type="text"] {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #94a3b8;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Results section */
+.quiz-results {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+}
+
+.score-card {
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+.score-card.passed {
+    background-color: #dcfce7;
+    border: 1px solid #16a34a;
+    color: #166534;
+}
+
+.score-card.failed {
+    background-color: #fee2e2;
+    border: 1px solid #dc2626;
+    color: #991b1b;
+}
+
+/* Individual answer results */
+.answer-result {
+    padding: 18px;
+    margin: 15px 0;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.correct-answer {
+    border-left: 5px solid #16a34a;
+}
+
+.incorrect-answer {
+    border-left: 5px solid #dc2626;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 600px) {
+    .quiz-info {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .quiz-timer {
+        width: auto;
+    }
+
+    .quiz-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
